@@ -1,6 +1,8 @@
 # TicTacToe2.0
 Tic Tac Toe with 3 Player (one of them is a AI). You can set the board field size and also each player characters.
 
+---
+
 ### How to run this code:
 Compile this code, access to console is mandatory.
 
@@ -21,6 +23,7 @@ Compile this code, access to console is mandatory.
 
 ###### [Ref-1]: AI plays automaticaly. Every auto move from AI, it will be displayed and also a new board you displyed in console.
 
+---
 
 ### Config File
 
@@ -43,5 +46,6 @@ Anything else will be ignored.
 `<keyword>:<value>` ex: `battlefieldSize:3`
 
 
-
+---
 Thank you for playing my game!
+
