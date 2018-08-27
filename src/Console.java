@@ -42,7 +42,7 @@ public class Console {
     }
 
     private void announceWinner(Player player){
-        System.out.println(String.format("%1$s - Player %2$s wins!!!\nThank you :)", player.getName(), player.getId()));
+        System.out.println(String.format("\n\n\uD83C\uDF81 \u01C3 %1$s - Player %2$s wins \u01C3 \uD83C\uDF81 \n\nThank you :)", player.getName(), player.getId()));
         System.exit(0);
     }
 
@@ -101,7 +101,7 @@ public class Console {
 
 
             }else
-                 System.out.println(String.format("%1$s << this move command is not allowed!", moveCommand));
+                 System.out.println(String.format("%1$s \u2190 this move command is not allowed!", moveCommand));
 
 
 
