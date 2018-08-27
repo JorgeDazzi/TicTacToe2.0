@@ -41,7 +41,7 @@ public class Console {
             return command.matches(String.format("[0-%1$s],[0-%1$s]",max));
     }
 
-    private void announceWinner(Player player){
+    private void getWinnerAnnounce(Player player){
         System.out.println(String.format("\n\n\uD83C\uDF81 \u01C3 %1$s - Player %2$s wins \u01C3 \uD83C\uDF81 \n\nThank you :)", player.getName(), player.getId()));
         System.exit(0);
     }
@@ -93,7 +93,7 @@ public class Console {
 
                     //Check and Report a winner
                     if (ticTacToe.getWinner())
-                        this.announceWinner(ticTacToe.getCurrentPlayer());
+                        this.getWinnerAnnounce(ticTacToe.getCurrentPlayer());
 
                     //New Turn
                     ticTacToe.setNextTurn();
