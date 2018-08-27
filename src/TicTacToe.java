@@ -213,7 +213,7 @@ public class TicTacToe {
 
         //report Draw and exit
         if(count == Settings.BATTLEFIELD_SIZE * Settings.BATTLEFIELD_SIZE){
-            System.out.println(String.format("There are no winners, the game ended in a draw. :/"));
+            System.out.println(String.format("\nThere are no winners, the game ended in a draw. :/\n"));
             System.exit(0);
             return false;
         }

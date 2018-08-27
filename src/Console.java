@@ -1,12 +1,14 @@
 import AI.AI;
 import player.Player;
 import settings.Settings;
-
-import java.util.Random;
 import java.util.Scanner;
 
 
 public class Console {
+
+    public void getGreetings(){
+        System.out.println("\u2716 \u25CF \u25BC Welcome to Tic Tac Toe 2.0  \u25BC \u25CF \u2716\n:....... Good Luck and Have Fun ......:\n\n");
+    }
 
     /**
      * Player name Console, this will wait for player name and then return a Obj Player
@@ -19,7 +21,7 @@ public class Console {
 
             //System.out.println("\n");
             System.out.println("( Min 2 characters )");
-            System.out.println("What`s player 1 name?");
+            System.out.println("Whats player 1 name?");
 
             Scanner sc = new Scanner(System.in);
             String playerName = sc.nextLine();
@@ -39,7 +41,7 @@ public class Console {
             return command.matches(String.format("[0-%1$s],[0-%1$s]",max));
     }
 
-    private void annouceWinner(Player player){
+    private void announceWinner(Player player){
         System.out.println(String.format("%1$s - Player %2$s wins!!!\nThank you :)", player.getName(), player.getId()));
         System.exit(0);
     }
@@ -47,7 +49,7 @@ public class Console {
 
     private String getPlayerMove(Player currentPlayer){
         System.out.println("\n");
-        System.out.println("(Move instruction: Nº,Nº (Nº between 0 and "+(Settings.BATTLEFIELD_SIZE-1) +") ... ex 0,1)");
+        System.out.println("(Move instruction: <Row,Column> (Nº between 0 and "+(Settings.BATTLEFIELD_SIZE-1) +") ... ex 0,1)");
         System.out.println(String.format(
                 "%1$s - Player Nº %2$s :: this is your turn, please make your move...",
                 currentPlayer.getName(),
@@ -76,7 +78,7 @@ public class Console {
             else {
 
                 moveCommand = bot.getBotMove();
-                System.out.println("\n AI moves = "+moveCommand+"\n");
+                System.out.println(String.format("\nAI Turn\nCheck out coordinates: %1$s \n",moveCommand));
             }
 
 
@@ -91,7 +93,7 @@ public class Console {
 
                     //Check and Report a winner
                     if (ticTacToe.getWinner())
-                        this.annouceWinner(ticTacToe.getCurrentPlayer());
+                        this.announceWinner(ticTacToe.getCurrentPlayer());
 
                     //New Turn
                     ticTacToe.setNextTurn();

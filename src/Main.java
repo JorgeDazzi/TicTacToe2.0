@@ -2,10 +2,8 @@ import AI.AI;
 import player.Player;
 import settings.LoadSettings;
 import settings.Settings;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 
 public class Main {
@@ -13,9 +11,11 @@ public class Main {
 
 
     public static void main(String[] args) {
+        Console c = new Console();
+        c.getGreetings();//Welcome
 
         LoadSettings config = new LoadSettings();
-        Console c = new Console();
+
 
         //Create Players
         List<Player> players = new ArrayList<>();

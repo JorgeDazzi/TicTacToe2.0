@@ -54,14 +54,12 @@ public class AI {
     }
 
     public String getBotMove(){
-        System.out.println("Bot Move::");
 
             for (int x = 0; x < Settings.BATTLEFIELD_SIZE; x++) {
                 for (int y = 0; y < Settings.BATTLEFIELD_SIZE; y++) {
                         if ((!this.battlefield[x][y].equals(Settings.EMPTY_POSITION)) && (!this.battlefield[x][y].equals(ai.getMark()))) {
                             if (this.getHistoryValidation(x, y)) {
 
-                                System.out.println(x + " .. " + y);
                                 this.histCoord.add(new Coordinate(x, y));
                                 return this.getDefensePosition(x, y);
                             }
@@ -81,8 +79,6 @@ public class AI {
 
         x = (x + addX) < Settings.BATTLEFIELD_SIZE-1 ? (x + 1) : 0;
         y = (y + addY) < Settings.BATTLEFIELD_SIZE-1 ? (y + 1) : 0;
-
-        System.out.println(String.format(" randoms >>> %1$s,%2$s",x,y));
 
         if(this.getCoordinatesValidation(x, y)){
             return String.format("%1$s,%2$s", x, y);

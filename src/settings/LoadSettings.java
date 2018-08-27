@@ -70,15 +70,15 @@ public class LoadSettings {
 
             switch(playerId){
                 case 1:
-                    player = "playerOneMark";
+                    player = "playerOneSymbol";
                     break;
 
                 case 2:
-                    player = "playerTwoMark";
+                    player = "playerTwoSymbol";
                     break;
 
                 case 3:
-                    player = "playerAiMark";
+                    player = "playerAiSymbol";
                     break;
                 default:
                     player = null;
