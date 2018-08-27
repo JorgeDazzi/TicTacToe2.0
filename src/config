@@ -1,0 +1,5 @@
+#config file
+battlefieldSize:6
+playerOneMark:
+playerTwoMark:
+playerAiMark:
