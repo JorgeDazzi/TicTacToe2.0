@@ -22,6 +22,25 @@ Compile this code, access to console is mandatory.
 ###### [Ref-1]: AI plays automaticaly. Every auto move from AI, it will be displayed and also a new board you displyed in console.
 
 
+### Config File
+
+The Tic Tac Toe 2.0 looking for 4 settings: 
+* battlefieldSize
+  - It should be a integer between 3 or 10, otherwise the default will set (default value = 3)
+  
+* playerOneMark
+  - It should a single character, otherwise the default will set (default value = ✖)
+  
+* playerTwoMark
+  - It should a single character, otherwise the default will set (default value = ●)
+  
+* playerAiMark
+  - It should a single character, otherwise the default will set (default value = ▼)
+
+Anything else will be ignored.
+
+##### Syntax
+`<keyword>:<value>` ex: `battlefieldSize:3`
 
 
 
