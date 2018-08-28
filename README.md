@@ -21,7 +21,7 @@ Compile this code, access to console is mandatory.
 5. After each turn, the game checks if the game has a winner. In case of draw, you have to fullfill the Board and then a draw message you will be displayed.
 
 
-###### [Ref-1]: AI plays automaticaly. Every auto move from AI, it will be displayed and also a new board you displyed in console.
+###### [Ref-1]: AI plays automaticaly. Every auto move from AI will be displayed and also a new board you displyed in console.
 
 ---
 
