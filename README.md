@@ -8,9 +8,9 @@ Compile this code, access to console is mandatory.
 
 ##### In Console ...
 
-1. The name of first player has to be type in console (The name must be big than 2 characters, otherwise the same ask will be asked again)
+1. The name of first player has to be type in console (The name must be bigger than 2 characters, otherwise it will be asked again)
 
-2. The name of second player has to be type in console (The name must be big than 2 characters, otherwise the same ask will be asked again)
+2. The name of second player has to be type in console (The name must be bigger than 2 characters, otherwise it will be asked again)
 
 3. The Tic Tac Toe 2.0 will Randomize who's going to play first:
 
